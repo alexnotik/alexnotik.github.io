@@ -1,0 +1,21 @@
+body {
+	margin: 0;
+	background-color: #EEEEEE;
+}
+
+.main{
+	width: 412px;
+	border: solid black;
+	border-width: 1px;
+	border-color: #AAAAAA;
+	background-color: #FFFFFF;
+	margin: auto;
+	padding-top: 30px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 30px;
+}
+
+.top{
+	text-align: center;
+}
