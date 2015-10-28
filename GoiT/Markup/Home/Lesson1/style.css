@@ -10,14 +10,18 @@ body {
 	border-color: #AAAAAA;
 	background-color: #FFFFFF;
 	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 30px;
 	padding-top: 30px;
 	padding-left: 50px;
 	padding-right: 50px;
 	padding-bottom: 30px;
 }
-
-.top{
+.main h2{
 	text-align: center;
+}
+.main img{
+	margin-left: 105px;	
 }
 .p1{
 	border-bottom: 1px solid grey;
