@@ -5,7 +5,7 @@ body{
 	width: 968px;
 	height: 100%;
 	padding: 50px 46px 60px;
-	border: 1px #dbdbdb;
+	border: 1px solid #dbdbdb;
 	border-right-style: solid;
 	border-left-style: solid;
 	margin: auto;
@@ -21,12 +21,12 @@ body{
 	background-color: #5c5c5c;
 	margin-top: 40px;
 }
-.navigation > ul{
+.navigation ul{
 	width: 100%;
   margin: 0;
   padding: 0;
 }
-.navigation > ul > li{
+.navigation ul li{
     display: inline;
     line-height: 40px;
     height: 40px;
@@ -54,13 +54,10 @@ body{
 	float: left;
 	margin-top: 40px;
 }
-.left > ul{
+.left ul{
 	width: 240px;
-  margin: 0;
-  padding: 0;
 }
-.left > ul > li{
-	width: 100%;
+.left ul li{
   line-height: 40px;
   height: 40px;
 }
@@ -86,6 +83,10 @@ body{
 	width: 100%;
 	display: inline-block;
 }
+.center img{
+	border: 1px solid lightgray;
+	margin-left: 40px;
+}
 
 .center{
 	width: 685px;
@@ -93,7 +94,9 @@ body{
 	margin-top: 40px;
 }
 .text{
+	margin-left: 66px;
 	margin-top: 40px;
+	width: 556px;
 }
 /*FOOTER*/
 .footer{
@@ -102,12 +105,12 @@ body{
 	background-color: lightgray;
 	margin-top: 62px;
 }
-.footer > ul{
+.footer ul{
 	width: 100%;
   margin: 0;
   padding: 0;
 }
-.footer > ul > li{
+.footer ul li{
     display: inline;
     line-height: 40px;
     height: 40px;
