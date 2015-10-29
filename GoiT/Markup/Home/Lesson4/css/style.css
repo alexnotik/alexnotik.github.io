@@ -1,0 +1,159 @@
+@font-face{
+	font-family: Tahoma;
+	src: url(../fonts/Tahoma.ttf);
+}
+body{
+background: url(../img/background.jpg);
+}
+.wrapper{
+	width: 1000px;
+	height: 990px;
+	-webkit-box-shadow: 0px 3px 9px 0px rgba(50, 50, 50, 0.86);
+-moz-box-shadow:    0px 3px 9px 0px rgba(50, 50, 50, 0.86);
+box-shadow:         0px 3px 9px 0px rgba(50, 50, 50, 0.86);
+  margin: auto;
+}
+/*HEADER*/
+.header{
+	height: 213px;
+	background-color: white;
+	position: relative;
+}
+.header img{
+	padding-left: 30px;
+	padding-top: 50px;
+}
+.header_menu{
+	position: absolute;
+	bottom: 7px;
+	right: 32px;
+}
+.contacts_header{
+	float: right;
+	position: absolute;
+	bottom: 100px;
+	right: 32px;
+}
+.contacts_header form{
+  margin: 0;
+}
+.navigation{
+	width: 100%;
+	display: inline-block;
+	background-color: #363636;
+	border-bottom: 1px solid black;
+	border-top: 1px solid white;
+	-webkit-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.84);
+-moz-box-shadow:    0px 3px 4px 0px rgba(50, 50, 50, 0.84);
+box-shadow:         0px 3px 4px 0px rgba(50, 50, 50, 0.84);
+}
+.navigation ul{
+	width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.navigation ul li{
+    display: inline;
+    line-height: 30px;
+    height: 30px;
+}
+.menu_button1{
+  width: 175px;
+  height: 30px;
+  float: left;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	text-decoration: none;
+	font-family: Tahoma;
+}
+.menu_button2{
+  width: 150px;
+  height: 30px;
+  float: left;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	text-decoration: none;
+	font-family: Tahoma;
+}
+.menu_button3{
+  width: 95px;
+  height: 30px;
+  float: left;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	text-decoration: none;
+	font-family: Tahoma;
+}
+.menu_button4{
+  width: 145px;
+  height: 30px;
+  float: left;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	text-decoration: none;
+	font-family: Tahoma;
+}
+.menu_button5{
+  width: 175px;
+  height: 30px;
+  float: left;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	text-decoration: none;
+	font-family: Tahoma;
+}
+.menu_button6{
+  width: 115px;
+  height: 30px;
+  float: left;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	text-decoration: none;
+	font-family: Tahoma;
+}
+.menu_button7{
+  width: 145px;
+  height: 30px;
+  float: left;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	text-decoration: none;
+	font-family: Tahoma;
+}
+/*INFORMATION*/
+.information{
+	background-color: #CFCFCF;
+	border-right: 1px solid gray;
+	float: left;
+	width: 25%;
+	height: 545px;
+	font-family: Tahoma;
+}
+.information p{
+	font-size: 14px;
+	font-family: Tahoma;
+}
+
+
+/*CENTER BLOCK*/
+.container{
+	background-color: white;
+	width: 50%;
+	font-family: Tahoma;
+}
+
+
+/*NEWS*/
+.news{
+	background-color: #CFCFCF;
+	float: right;
+	width: 25%;
+	font-family: Tahoma;
+}
