@@ -37,8 +37,11 @@ box-shadow:         0px 3px 9px 0px rgba(50, 50, 50, 0.86);
 .contacts_header form{
   margin: 0;
 }
-.navigation{
-	width: 100%;
+/*NAVIGATION*/
+#nav{
+	margin-top: -3px;
+	width: 1000px;
+	list-style: none;
 	display: inline-block;
 	background-color: #363636;
 	border-bottom: 1px solid black;
@@ -47,15 +50,19 @@ box-shadow:         0px 3px 9px 0px rgba(50, 50, 50, 0.86);
 -moz-box-shadow:    0px 3px 4px 0px rgba(50, 50, 50, 0.84);
 box-shadow:         0px 3px 4px 0px rgba(50, 50, 50, 0.84);
 }
-.navigation ul{
-	width: 100%;
+#nav ul{
+	width: 1000px;
   margin: 0;
   padding: 0;
 }
-.navigation ul li{
+#nav ul li{
     display: inline;
     line-height: 30px;
     height: 30px;
+}
+#nav li a{
+	color: white;
+	text-decoration: none;
 }
 .menu_button1{
   width: 175px;
@@ -67,6 +74,7 @@ box-shadow:         0px 3px 4px 0px rgba(50, 50, 50, 0.84);
 	text-decoration: none;
 	font-family: Tahoma;
 }
+/*ВЫПАДАЮЩИЕ ЕЛЕМЕНТЫ СПИСКА*/
 .menu_button2{
   width: 150px;
   height: 30px;
@@ -77,6 +85,27 @@ box-shadow:         0px 3px 4px 0px rgba(50, 50, 50, 0.84);
 	text-decoration: none;
 	font-family: Tahoma;
 }
+.submenu2{
+	display: none;
+	width: 150px;
+	background: #363636;
+	text-align: center;
+	vertical-align: middle;
+	-webkit-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.84);
+-moz-box-shadow:    0px 3px 4px 0px rgba(50, 50, 50, 0.84);
+box-shadow:         0px 3px 4px 0px rgba(50, 50, 50, 0.84);
+}
+.submenu2 li{
+	list-style-type: none;
+	display: block;
+	height: 30px;
+	}
+	.plus{
+	display: inline-block;
+	-webkit-transition: .3s ease-in-out;
+  	-moz-transition: .3s ease-in-out;
+  	-o-transition: .3s ease-in-out;
+	}
 .menu_button3{
   width: 95px;
   height: 30px;
@@ -127,33 +156,46 @@ box-shadow:         0px 3px 4px 0px rgba(50, 50, 50, 0.84);
 	text-decoration: none;
 	font-family: Tahoma;
 }
-/*INFORMATION*/
-.information{
-	background-color: #CFCFCF;
-	border-right: 1px solid gray;
-	float: left;
-	width: 25%;
-	height: 545px;
-	font-family: Tahoma;
-}
-.information p{
-	font-size: 14px;
-	font-family: Tahoma;
-}
-
-
-/*CENTER BLOCK*/
-.container{
+/*3 CENTER COLUMNS*/
+.fon{
+	width: 1000px;
 	background-color: white;
-	width: 50%;
-	font-family: Tahoma;
+  float: left;
+  margin-top: -2px;
+  overflow: hidden;
 }
-
-
-/*NEWS*/
-.news{
-	background-color: #CFCFCF;
-	float: right;
-	width: 25%;
+.left_column{
+width: 200px;
+padding-bottom: 20000px;
+margin-bottom: -20000px;
+float: left;
+background: lightgray;
+border-right: 1px solid gray;
+}
+.left_column p{
+	text-align: center;
+}
+.right_column{
+width: 200px;
+padding-bottom: 20000px;
+margin-bottom: -20000px;
+float: right;
+background: lightgray;
+border-left: 1px solid gray;
+}
+.right_column p{
+	font-size: 14px;
+	line-height: 23px;
+	text-align: center;
+}
+/*FOOTER*/
+footer{
+	width: 1000px;
+	height: 30px;
+}
+footer p{
+	text-align: center;
+	color: white;
 	font-family: Tahoma;
+	font-size: 12px;
 }
