@@ -20,13 +20,9 @@ body{
 	display: inline-block;
 	background-color: #5c5c5c;
 	margin-top: 40px;
-}
-.navigation ul{
 	width: 100%;
-  margin: 0;
-  padding: 0;
 }
-.navigation ul li{
+.navigation li{
     display: inline;
     line-height: 40px;
     height: 40px;
@@ -39,6 +35,14 @@ body{
 	vertical-align: middle;
 	color: white;
 	text-decoration: none;
+}
+.active{
+	background-color: #464646;
+	border-width: 1px;
+	width: 142px;
+	border-color: #838383;
+	border-left-style: solid;
+	border-right-style: solid;
 }
 .menubutton:hover{
 	background-color: #464646;
@@ -56,9 +60,7 @@ body{
 }
 .left ul{
 	width: 240px;
-}
-.left ul li{
-  line-height: 40px;
+	line-height: 40px;
   height: 40px;
 }
 .leftmenubutton{
