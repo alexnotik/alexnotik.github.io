@@ -57,9 +57,6 @@ body{
 	width: 240px;
 	float: left;
 	margin-top: 40px;
-}
-.left ul{
-	width: 240px;
 	line-height: 40px;
   height: 40px;
 }
@@ -107,12 +104,7 @@ body{
 	background-color: lightgray;
 	margin-top: 62px;
 }
-.footer ul{
-	width: 100%;
-  margin: 0;
-  padding: 0;
-}
-.footer ul li{
+.footer li{
     display: inline;
     line-height: 40px;
     height: 40px;
