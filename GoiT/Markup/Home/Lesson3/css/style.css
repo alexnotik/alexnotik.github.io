@@ -36,15 +36,7 @@ body{
 	color: white;
 	text-decoration: none;
 }
-.active{
-	background-color: #464646;
-	border-width: 1px;
-	width: 142px;
-	border-color: #838383;
-	border-left-style: solid;
-	border-right-style: solid;
-}
-.menubutton:hover{
+.active , .menubutton:hover{
 	background-color: #464646;
 	border-width: 1px;
 	width: 142px;
