@@ -28,133 +28,77 @@ box-shadow:         0px 3px 9px 0px rgba(50, 50, 50, 0.86);
 	bottom: 7px;
 	right: 32px;
 }
+.header_menu li{
+	float: left;
+	}
 .contacts_header{
-	float: right;
-	position: absolute;
-	bottom: 100px;
-	right: 32px;
+    float: right;
+    line-height: 19px;
+    font-size: 14px;
+    color: #5fa5bb;
+    margin: 10px 30px;
 }
-.contacts_header form{
-  margin: 0;
+.contacts_header h2{
+	font-weight: 600;
 }
+
 /*NAVIGATION*/
-#nav{
-	margin-top: -3px;
-	width: 1000px;
-	list-style: none;
-	display: inline-block;
-	background-color: #363636;
-	border-bottom: 1px solid black;
+.nav{
+	padding: 0 2px;
+	float:left;
+	width:997px;
+	background: #333;
+	-webkit-box-shadow: 0px 3px 9px 0px rgba(50, 50, 50, 0.86);
+  -moz-box-shadow:    0px 3px 9px 0px rgba(50, 50, 50, 0.86);
+  box-shadow:         0px 3px 9px 0px rgba(50, 50, 50, 0.86);
+	border-bottom: 1px solid #000;
 	border-top: 1px solid white;
-	-webkit-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.84);
--moz-box-shadow:    0px 3px 4px 0px rgba(50, 50, 50, 0.84);
-box-shadow:         0px 3px 4px 0px rgba(50, 50, 50, 0.84);
-}
-#nav ul{
-	width: 1000px;
-  margin: 0;
-  padding: 0;
-}
-#nav ul li{
-    display: inline;
-    line-height: 30px;
-    height: 30px;
-}
-#nav li a{
-	color: white;
-	text-decoration: none;
-}
-.menu_button1{
-  width: 175px;
-  height: 30px;
-  float: left;
+	margin-top: -3px;
 	text-align: center;
 	vertical-align: middle;
-	color: white;
-	text-decoration: none;
-	font-family: Tahoma;
 }
-/*ВЫПАДАЮЩИЕ ЕЛЕМЕНТЫ СПИСКА*/
-.menu_button2{
-  width: 150px;
-  height: 30px;
-  float: left;
-	text-align: center;
-	vertical-align: middle;
-	color: white;
-	text-decoration: none;
-	font-family: Tahoma;
+.nav li{
+	float:left;
+	margin: 0 28px;
+	position:relative;
+	line-height: 20px;
 }
-.submenu2{
-	display: none;
-	width: 150px;
-	background: #363636;
-	text-align: center;
-	vertical-align: middle;
-	-webkit-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.84);
--moz-box-shadow:    0px 3px 4px 0px rgba(50, 50, 50, 0.84);
-box-shadow:         0px 3px 4px 0px rgba(50, 50, 50, 0.84);
+.nav li a{
+	display:block;
+	padding:5px;
+	color:#fff;
+	background:#333;
+	text-decoration:none;
 }
-.submenu2 li{
-	list-style-type: none;
-	display: block;
-	height: 30px;
-	}
-	.plus{
-	display: inline-block;
-	-webkit-transition: .3s ease-in-out;
-  	-moz-transition: .3s ease-in-out;
-  	-o-transition: .3s ease-in-out;
-	}
-.menu_button3{
-  width: 95px;
-  height: 30px;
-  float: left;
-	text-align: center;
-	vertical-align: middle;
-	color: white;
-	text-decoration: none;
-	font-family: Tahoma;
+.nav li a:hover{
+	color:#fff;
 }
-.menu_button4{
-  width: 145px;
-  height: 30px;
-  float: left;
-	text-align: center;
-	vertical-align: middle;
-	color: white;
-	text-decoration: none;
-	font-family: Tahoma;
+/*--- ВЫПАДАЮЩИЕ ПУНКТЫ ---*/
+.nav ul{
+	position:absolute;
+	left:-9999px; /* Скрываем за экраном, когда не нужно (данный метод лучше, чем display:none;) */
 }
-.menu_button5{
-  width: 175px;
-  height: 30px;
-  float: left;
-	text-align: center;
-	vertical-align: middle;
-	color: white;
-	text-decoration: none;
-	font-family: Tahoma;
+.nav ul li{
+	float:none;
+	margin-left:0;
+	width: 100%;
+	padding: 0 5px; 
 }
-.menu_button6{
-  width: 115px;
-  height: 30px;
-  float: left;
-	text-align: center;
-	vertical-align: middle;
-	color: white;
-	text-decoration: none;
-	font-family: Tahoma;
+.nav ul a{
+	white-space:nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
+	display:block;
+	-webkit-box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.51);
+	-moz-box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.51);
+	box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.51);
 }
-.menu_button7{
-  width: 145px;
-  height: 30px;
-  float: left;
-	text-align: center;
-	vertical-align: middle;
-	color: white;
-	text-decoration: none;
-	font-family: Tahoma;
+.nav li:hover ul{ /* Выводим выпадающий пункт при наведении курсора */
+	left:0; /* Приносим его обратно на экран, когда нужно */
+	opacity:1; /* Делаем непрозрачным */
+	border-top: 1px solid black;
+}
+
+.nav li:hover ul li a:hover{ /* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный пункт */
+	background:#333;
 }
 /*3 CENTER COLUMNS*/
 .fon{
@@ -172,8 +116,21 @@ float: left;
 background: lightgray;
 border-right: 1px solid gray;
 }
+.left_column h2{
+text-align: center;
+	font: 600 18px Tahoma;
+	line-height: 35px;
+}
 .left_column p{
 	text-align: center;
+}
+.center_column{
+	background-color: white;
+	float: left;
+	padding-bottom: 20000px;
+  margin-bottom: -20000px;
+  width: 598px;
+
 }
 .right_column{
 width: 200px;
