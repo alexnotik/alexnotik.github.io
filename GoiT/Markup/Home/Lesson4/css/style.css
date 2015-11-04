@@ -4,6 +4,7 @@
 }
 body{
 background: url(../img/background.jpg);
+font-family: Tahoma, Arial , sans-serif;
 }
 .wrapper{
 	width: 1000px;
@@ -41,73 +42,90 @@ box-shadow:         0px 3px 9px 0px rgba(50, 50, 50, 0.86);
 .contacts_header h2{
 	font-weight: 600;
 }
-
 /*NAVIGATION*/
-.nav{
-	padding: 0 2px;
-	float:left;
-	width:997px;
-	background: #333;
-	-webkit-box-shadow: 0px 3px 9px 0px rgba(50, 50, 50, 0.86);
-  -moz-box-shadow:    0px 3px 9px 0px rgba(50, 50, 50, 0.86);
-  box-shadow:         0px 3px 9px 0px rgba(50, 50, 50, 0.86);
-	border-bottom: 1px solid #000;
-	border-top: 1px solid white;
+.clearfix:after{
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+  width: 100%;
+}
+.menu{
 	margin-top: -3px;
-	text-align: center;
-	vertical-align: middle;
-}
-.nav li{
-	float:left;
-	margin: 0 28px;
-	position:relative;
-	line-height: 20px;
-        height: 31px;
-}
-.nav li a{
-	display:block;
-	padding:5px;
-	color:#fff;
-	background:#333;
-	text-decoration:none;
-}
-.nav li a:hover{
-	color:#fff;
-}
-/*--- ВЫПАДАЮЩИЕ ПУНКТЫ ---*/
-.nav ul{
-	position:absolute;
-	left:-9999px; /* Скрываем за экраном, когда не нужно (данный метод лучше, чем display:none;) */
-}
-.nav ul li{
-	float:none;
-	margin-left:0;
-	width: 100%;
-	padding: 0 5px; 
-}
-.nav ul a{
-	white-space:nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
-	display:block;
-	-webkit-box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.51);
-	-moz-box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.51);
-	box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.51);
-}
-.nav li:hover ul{ /* Выводим выпадающий пункт при наведении курсора */
-	left:0; /* Приносим его обратно на экран, когда нужно */
-	opacity:1; /* Делаем непрозрачным */
-	border-top: 1px solid black;
+	border-top: 1px solid white;
+  border-bottom: 1px solid #000;
+  z-index: 1;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#373737+0,303030+100 */
+  background: rgb(55,55,55); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(55,55,55,1) 0%, rgba(48,48,48,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(55,55,55,1)), color-stop(100%,rgba(48,48,48,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(55,55,55,1) 0%,rgba(48,48,48,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(55,55,55,1) 0%,rgba(48,48,48,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(55,55,55,1) 0%,rgba(48,48,48,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(55,55,55,1) 0%,rgba(48,48,48,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#373737', endColorstr='#303030',GradientType=0 ); /* IE6-9 */
+
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
 }
 
-.nav li:hover ul li a:hover{ /* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный пункт */
-	background:#333;
+
+.menu li{
+  position: relative;
+  float: left;
+}
+.menu li a{
+  position: relative;
+  padding: 0 33px;
+  display: block;
+  line-height: 28px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.menu ul+a:after{
+	content: '\25be';
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -14px;
+  right: 10px;
+  height: 6px;
+  width: 5px;
+}
+
+.menu ul{
+  /*display: none;*/
+  position: absolute;
+  left: 34px;
+  visibility: hidden;
+  top: 0;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+}
+
+.menu li:hover ul{
+  visibility: visible;
+  opacity: 1;
+  top: 100%;
+}
+
+.menu ul li{
+  background: #303030;
+}
+.menu ul a{
+  padding: 0 10px;
 }
 /*3 CENTER COLUMNS*/
 .fon{
 	width: 1000px;
+	height: 513px;
 	background-color: white;
   float: left;
   margin-top: -2px;
   overflow: hidden;
+  z-index: -1;
 }
 .left_column{
 width: 200px;
@@ -150,10 +168,11 @@ border-left: 1px solid gray;
 footer{
 	width: 1000px;
 	height: 30px;
+	margin: 0 auto;
 }
 footer p{
 	text-align: center;
 	color: white;
-	font-family: Tahoma;
 	font-size: 12px;
+	line-height: 32px;
 }
