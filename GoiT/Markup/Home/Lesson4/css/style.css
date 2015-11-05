@@ -51,7 +51,8 @@ box-shadow:         0px 3px 9px 0px rgba(50, 50, 50, 0.86);
   width: 100%;
 }
 .menu{
-	margin-top: -3px;
+	margin-top: -1px;
+	width: 1000px;
 	border-top: 1px solid white;
   border-bottom: 1px solid #000;
   z-index: 1;
@@ -64,7 +65,7 @@ box-shadow:         0px 3px 9px 0px rgba(50, 50, 50, 0.86);
   background: -ms-linear-gradient(top,  rgba(55,55,55,1) 0%,rgba(48,48,48,1) 100%); /* IE10+ */
   background: linear-gradient(to bottom,  rgba(55,55,55,1) 0%,rgba(48,48,48,1) 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#373737', endColorstr='#303030',GradientType=0 ); /* IE6-9 */
-
+  position: absolute;
   box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
 }
 
@@ -97,12 +98,14 @@ box-shadow:         0px 3px 9px 0px rgba(50, 50, 50, 0.86);
 .menu ul{
   /*display: none;*/
   position: absolute;
-  left: 34px;
+  left: 23px;
   visibility: hidden;
   top: 0;
   opacity: 0;
   transition: all 0.5s;
-  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
 }
 
 .menu li:hover ul{
@@ -120,10 +123,10 @@ box-shadow:         0px 3px 9px 0px rgba(50, 50, 50, 0.86);
 /*3 CENTER COLUMNS*/
 .fon{
 	width: 1000px;
-	height: 513px;
+	height: 511px;
 	background-color: white;
   float: left;
-  margin-top: -2px;
+  margin-top: 28px;
   overflow: hidden;
   z-index: -1;
 }
