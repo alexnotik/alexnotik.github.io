@@ -147,7 +147,7 @@ font-size: 24px;
 }
 .fb:before {
     position: absolute;
-    height: 35px;
+    height: 34px;
     top: 10px;
     left: 38px;
     margin-top: -10px;
@@ -181,13 +181,13 @@ font-size: 24px;
     content: "";
 }
 .fb a:after {
-    background-image: url(../img/fb_element.png.png);
+    background-image: url(../img/fb_element.png);
     position: absolute;
     height: 14px;
     width: 10px;
     top: 50%;
     right: 27px;
-    margin-top: -10px;
+    margin-top: -6px;
     content: "";
 }
 
