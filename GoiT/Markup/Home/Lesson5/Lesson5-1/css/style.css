@@ -9,9 +9,11 @@
     font-weight: normal;
     font-style: normal;
 }
-body{
-	font-family: Helvetica, Arial, sans-serif;
-	background: url(../img/photo.png) 50% 0 repeat-x;
+body {
+	background: url(../img/photo.png) no-repeat center top fixed;
+	background-size: cover;
+	font-family: Helvetica , Arial , sans-serif;
+	font-size: 14px;
 }
 .wrapper{
 	display: table;
@@ -88,7 +90,8 @@ padding-left: 10px;
 	font-size: 14px;
 }
 ul{
-	margin-right: 402px;
+	margin-right: 475px;
+	float: right;
 }
 ul li{
 	float: right;
@@ -106,7 +109,7 @@ ul li:hover{
 	background: #4eabda;
 	color: white;
 }
-ul li a:hover{
+ul li:hover a{
 	color: white;
 }
 /*FORM BODY*/
@@ -116,7 +119,8 @@ width: 560px;
 height: 62px;
 margin: 0 auto;
 }
-.form_top h2{
+.form_top span{
+display: block;
 text-align: center; 
 padding: 20px;
 color: white;
@@ -124,49 +128,67 @@ font-size: 24px;
 }
 .form_down{
 	margin: 0 auto;
+	margin-top: 2px;
 	background-color: rgba(0 , 0 , 0 , 0.63);
 	height: 560px;
 	width: 560px;
 }
+.login_form{
+	padding-top: 35px;
+}
 /* FACEBOOK*/
-.fb-button{
+.fb {
+	width: 275px;
+	background: linear-gradient(to top, #2e4476,#3b5798);
 	margin: 0 auto;
-  width: 270px;
-  height: 30px;
-  margin-top: 2px;
+	border-top: 1px solid #7889b5;
+	border-radius: 3px;
+	position: relative;
 }
-.fb-button .icon {
-  width: 30px;
-  height: 30px;
-  border-radius: 4px 0px 0px 4px;
-  font-family: "Arial Bold", sans-serif;
-  font-weight: bolder;
-  font-size: 22px;
+.fb:before {
+    position: absolute;
+    height: 35px;
+    top: 10px;
+    left: 38px;
+    margin-top: -10px;
+    content: "";
+    border-left: 1px solid #213c71;
+    border-right: 1px solid #4d66a6;
 }
-.title {
-  height: 30px;
-  padding: 0 20px;
-  border-radius: 0px 4px 4px 0px;
-  font-family: "Arial Bold", sans-serif;
-  font-weight: normal;
-  font-size: 14px;
+.fb a {
+	display: block;
+	padding-left: 70px;
+	line-height: 34px;
+	font-size: 15px;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.7);
+	font-family: Arial;
 }
-.fb-button .icon, .fb-button .title {
-    display: inline-block;
-    float: left;
-    background: rgba(72,106,181,1);
-    background: -moz-linear-gradient(top, rgba(72,106,181,1) 0%, rgba(51,77,135,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(72,106,181,1)), color-stop(100%, rgba(51,77,135,1)));
-    background: -webkit-linear-gradient(top, rgba(72,106,181,1) 0%, rgba(51,77,135,1) 100%);
-    background: -o-linear-gradient(top, rgba(72,106,181,1) 0%, rgba(51,77,135,1) 100%);
-    background: -ms-linear-gradient(top, rgba(72,106,181,1) 0%, rgba(51,77,135,1) 100%);
-    background: linear-gradient(to bottom, rgba(72,106,181,1) 0%, rgba(51,77,135,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#486ab5', endColorstr='#334d87', GradientType=0 );
-    border: 1px outset #184aa5;
-    line-height: 30px;
-    color: white;
-    text-align: center;
-    text-decoration: none;
+
+.fb span {
+	font-weight: bold;
+}
+
+.fb a:before {
+    background-image: url(../img/fb.png);
+    position: absolute;
+    height: 21px;
+    width: 9px;
+    top: 50%;
+    left: 15px;
+    margin-top: -10px;
+    content: "";
+}
+.fb a:after {
+    background-image: url(../img/fb_element.png.png);
+    position: absolute;
+    height: 14px;
+    width: 10px;
+    top: 50%;
+    right: 27px;
+    margin-top: -10px;
+    content: "";
 }
 
 .form_down p{
@@ -176,25 +198,32 @@ font-size: 24px;
 	margin-top: 32px;
 	position: relative;
 }
-.ou:before{
-	position: absolute;
-	content:'';
-	width: 118px;
-	height: 2px;
-	display: block;
-	margin-left: 143px;
-	margin-top: 6px;
-	background: url(../img/ou_element.png) 0 0 repeat-x;
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+  margin-bottom: 30px;
 }
-.ou:after{
-	position: absolute;
-	content: '';
-	width: 118px;
-	height: 2px;
-	display: block;
-	left: 300px;
-	margin-top: -8px;
-	background: url(../img/ou_element.png) 0 0 repeat-x;
+.fancy span {
+  display: inline-block;
+  position: relative; 
+  color: #999; 
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  border-bottom: .5px solid #000;
+  border-top: 1px solid #666;
+  top: 0;
+  width: 121px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 5px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 5px;
 }
 form{
 	margin-top: 30px;
